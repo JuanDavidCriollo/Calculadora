@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!--Titulo que aparecera en la pestañaa -->
+		<title> Calcualdora</title>
+		<!-- indicación de caracteres especiales -->
+		<meta charset="UTF-8"/>
+		<!-- descripción de la paina -->
+		<meta name="description" content="Calculador usando HTML5, CSS3 Y JS"/>
+		<!-- palabras clave de la peina -->
+		<meta name="keywords" content="calculadora"/>
+		<!-- llamado a la hoja de estilos -->
+		<link rel="stylesheet" href="css/Hoja.css">
+		<!-- llamado al archivo eterno del JS -->
+		<script src="js/funciones.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<!--Titulo que aparecera en la vista -->
+			<h1>Calculadora</h1>
+		</header>
+		<section>
+			<!-- Campo en el que se mostraran los numeros y las operaciones -->
+			<input class="campo" type="text" id="casilla" readonly >
+			<div id="botones">
+			<!-- División de la parte de operaciones -->
+				<div id="operaciones">
+					<input class="boton" type="button" value="+">
+					<input class="boton" type="button" value="-">
+					<input class="boton" type="button" value="/">
+					<input class="boton" type="button" value="*">
+					<input class="boton1" type="button" value="=">
+				</div>
+
+				<!-- División de la parte denumeros -->
+				<div id="numeros">
+					<!-- División del primer sector -->
+					<div id="linea1">
+						<input class="boton" type="button" value="0">
+						<input class="boton" type="button" value="1">
+						<input class="boton" type="button" value="2">
+						<input class="boton" type="button" value="3">
+						<input class="boton" type="button" value="4">
+					</div>
+					<!-- División del segudo sector -->
+					<div id="linea2">
+						<input class="boton" type="button" value="5">
+						<input class="boton" type="button" value="6">
+						<input class="boton" type="button" value="7">
+						<input class="boton" type="button" value="8">
+						<input class="boton" type="button" value="9">
+					</div>
+				</div>
+				<!-- Dvision para el boton de impiar el campo de operaciones -->
+				<div id="limpiar">
+					<input class="boton2" id="sirve sta nrd" type="button" value="Limpiar">
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<!-- Seccion donde se encuentra el lienzo canvas para mostrar el texto de calculadora en footer -->
+			<section class="caja">
+				<canvas id="lienzo" width="400" height="50">
+				Navegador no soporta el elemento canvas
+				</canvas>
+			</section>
+
+		</footer>
+
+
+
+	</body>
+
+</html>
